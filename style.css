@@ -1,0 +1,136 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin:0;
+    padding:0;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.header .container, 
+.hero .container {
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    align-items:center;
+    color: #F9FAF8;
+}
+
+.hero .container {
+    gap:30px;
+}
+
+.basic-info {
+    display: flex;
+    flex-direction:column;
+    align-items:space-between;
+    padding:0;
+    gap:24px;
+}
+
+.links {
+    gap: 20px;
+    display: flex;
+    flex-direction:row;
+}
+
+.logo {
+    font-size: 24px;
+}
+
+.hero-background {
+    background-color: #1F2937;
+    padding-bottom: 20px;
+}
+
+.hero-image {
+    max-width:400px;
+    height:auto;
+}
+
+.button-hero {
+    height:35px;
+    width:120px;
+    font-size:16px;
+    border-radius:4px;
+    background-color:darkslateblue;
+    color:#F9FAF8;
+    box-shadow: 3px;
+}
+
+.members {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+
+.members .container {
+    display:flex;
+    flex-direction:row;
+    gap:25px;
+}
+
+.member {
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+}
+
+.member img {
+    width:225px;
+    height:300px;
+    border-radius: 10px;
+}
+
+.quote {
+    background-color: #E5E7EB;
+    color:#1F2937;
+    padding:30px;
+}
+
+.quote .container {
+    display:flex;
+    flex-direction:column;
+}
+
+.action-call {
+    padding:30px;
+}
+
+.action-popup {
+    width:100%;
+    height:auto;
+    background-color: blue;
+    display: flex;
+    padding:20px;
+    border-radius:20px;
+    box-shadow: 20px;
+    justify-content: space-between;
+    align-items:center;
+}
+
+.action-message {
+    display:block;
+    color: white;
+}
+
+.action-button {
+    display:flex;
+    padding: 15px 30px;
+    background-color: transparent;
+    height: 20px;
+    border-radius: 20px;
+    color:white;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: auto;
+    background-color:gray
+}
