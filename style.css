@@ -1,5 +1,5 @@
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     margin:0;
     padding:0;
 }
@@ -7,6 +7,15 @@ body {
 .container {
     max-width: 1000px;
     margin: 0 auto;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+    background-color: #00000080
 }
 
 .header .container, 
@@ -20,6 +29,13 @@ body {
 
 .hero .container {
     gap:30px;
+    padding-top: 100px;
+    align-items: flex-end;
+    height: 80dvb;
+}
+
+.header .container {
+    max-width: 1200px;
 }
 
 .basic-info {
@@ -27,7 +43,14 @@ body {
     flex-direction:column;
     align-items:space-between;
     padding:0;
+    margin:50px;
     gap:24px;
+}
+
+.basic-info h1 {
+    font-size:50px; 
+    font-weight:bolder; 
+    margin: 0;
 }
 
 .links {
@@ -41,8 +64,12 @@ body {
 }
 
 .hero-background {
-    background-color: #1F2937;
+    background-image: linear-gradient(#00000080, #00000080), url("./images/hero-image.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center 65%;
     padding-bottom: 20px;
+    min-height: 100dvb;
 }
 
 .hero-image {
@@ -55,7 +82,7 @@ body {
     width:120px;
     font-size:16px;
     border-radius:4px;
-    background-color:darkslateblue;
+    background-color: #580016;
     color:#F9FAF8;
     box-shadow: 3px;
 }
@@ -63,23 +90,25 @@ body {
 .members {
     padding-top: 20px;
     padding-bottom: 20px;
+    background-color: #FDF5E6;
+    flex-wrap: wrap;
 }
 
 
 .members .container {
     display:flex;
     flex-direction:row;
-    gap:25px;
+    flex-wrap: wrap;
 }
 
 .member {
     display:flex;
     flex-direction:column;
-    gap:10px;
+    margin:50px;
 }
 
 .member img {
-    width:225px;
+    width:400px;
     height:300px;
     border-radius: 10px;
 }
