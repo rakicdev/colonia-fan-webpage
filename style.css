@@ -55,7 +55,6 @@ main {
     flex-direction:column;
     align-items:space-between;
     padding:0;
-    margin:50px;
     gap:24px;
 }
 
@@ -70,6 +69,7 @@ main {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center 65%;
+    background-attachment: fixed;
     padding-bottom: 20px;
     min-height: 100dvb;
 }
@@ -95,7 +95,6 @@ main {
     padding-bottom: 20px;
     background: #8c0000;
     background: linear-gradient(90deg, rgba(140, 0, 0, 1) 0%, rgba(99, 0, 0, 1) 50%, rgba(82, 0, 0, 1) 100%);  
-    flex-wrap: wrap;
     border-style: solid;
     border-width: 2px 0;
     border-color: #260000;
@@ -112,6 +111,7 @@ main {
     flex-direction:row;
     flex-wrap: wrap;
     justify-content: space-between;
+    min-width:1000px;
 }
 
 .member {
@@ -133,4 +133,40 @@ footer {
     margin-top: auto;
     background-color:gray;
     color: white;
+}
+
+.hero-background.members-page {
+    padding-top: 160px;
+    padding-bottom: 40px;
+    min-height:0;
+    background-image:  linear-gradient(#00000080, #00000080), url("./images/hero-image.jpg");
+    background-repeat: no-repeat;
+    background-position: center 65%;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.naslov h1 {
+    font-size: 72px;
+    margin:0px;
+    margin:0px;
+}
+
+.member-info img {
+    float: left;
+    width: 300px;
+    height: 225px;
+    margin: 0px 20px 20px 0;
+}
+
+.member-info p {
+    margin: 0px;
+}
+.member-info {
+    background: linear-gradient(90deg, rgba(140, 0, 0, 1) 0%, rgba(99, 0, 0, 1) 50%, rgba(82, 0, 0, 1) 100%);
+    height: auto;
+    display: flow-root;
+    padding: 20px 0;
+    border-width: 2px 0;
+    border-color: #260000;
 }
