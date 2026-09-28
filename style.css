@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Montserrat', sans-serif;
     margin:0;
@@ -85,8 +89,9 @@ main {
 }
 
 .hero-button {
+    display:block;
     height:35px;
-    width:220px;
+    width:200px;
     padding: 0 20px;
     font-size:16px;
     background: #960000;
@@ -94,9 +99,11 @@ main {
     border: 0;
     box-shadow:   0 0 20px #000000;
     color:white; 
+    text-align: center;
+    align-content:center;
 }
 
-.members {
+#members {
     padding-top: 20px;
     padding-bottom: 20px;
     background: #8c0000;
@@ -107,12 +114,12 @@ main {
     text-shadow: 0 0 20px black;
 }
 
-.members h1 {
+#members h1 {
     justify-self: center;
     padding: 0 0 20px 0;
 }
 
-.members .container {
+#members .container {
     display:flex;
     flex-direction:row;
     flex-wrap: wrap;
@@ -199,7 +206,7 @@ footer {
 .member-info p {
     margin-bottom: 5px;
 }
-.member-info {
+#member-info, #about-info {
     background: linear-gradient(90deg, rgba(140, 0, 0, 1) 0%, rgba(99, 0, 0, 1) 50%, rgba(82, 0, 0, 1) 100%);
     height: auto;
     display: flow-root;
