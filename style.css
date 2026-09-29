@@ -1,5 +1,6 @@
 html {
     scroll-behavior: smooth;
+    text-shadow: 0 0 20px black;
 }
 
 body {
@@ -7,6 +8,9 @@ body {
     margin:0;
     padding:0;
     color: #F2E8D8;
+    min-height: 100dvh;
+    display:flex;
+    flex-direction:column;
 }
 
 .container {
@@ -111,11 +115,9 @@ main {
     border-style: solid;
     border-width: 2px 0;
     border-color: #260000;
-    text-shadow: 0 0 20px black;
 }
 
-#members h1 {
-    justify-self: center;
+#members h2 {
     padding: 0 0 20px 0;
 }
 
@@ -124,13 +126,17 @@ main {
     flex-direction:row;
     flex-wrap: wrap;
     justify-content: space-between;
-    min-width:1000px;
 }
 
 .member {
     display:flex;
     flex-direction:column;
-    align-items: center;
+    justify-content: center;
+    min-height: auto;
+}
+
+.member h2 {
+    justify-self: center;
 }
 
 .member img {
@@ -144,8 +150,8 @@ footer {
     align-items: center;
     justify-content: center;
     margin-top: auto;
-    background-color:gray;
-    color: white;
+    background-color:#260000;
+    color:#F2E8D8;
 }
 
 .hero-background.members-page {
@@ -163,7 +169,6 @@ footer {
     font-size: 50px;
     margin:0px;
     margin:0px;
-    text-shadow: 0 0 20px black
 }
 
 #image1 {
@@ -206,7 +211,7 @@ footer {
 .member-info p {
     margin-bottom: 5px;
 }
-#member-info, #about-info {
+#member-info, #about-info, #discography-info {
     background: linear-gradient(90deg, rgba(140, 0, 0, 1) 0%, rgba(99, 0, 0, 1) 50%, rgba(82, 0, 0, 1) 100%);
     height: auto;
     display: flow-root;
@@ -214,5 +219,56 @@ footer {
     border-width: 2px 0;
     border-color: #260000;
     text-align:justify;
+    flex:1;
 }
 
+#discography {
+    padding: 20px 0;
+    background: #590000;
+    background: linear-gradient(90deg, rgba(89, 0, 0, 1) 0%, rgba(56, 0, 0, 1) 50%, rgba(0, 0, 0, 1) 100%);
+}
+
+.section-name {
+    font-size: 26px;
+    justify-self: center;
+}
+
+.discography-section {
+    display:flex;
+    flex-direction:row;
+    gap: 20px;
+}
+
+.discography-image {
+    width: 490px;
+    height: auto;
+}
+
+.discography-text {
+    display:flex;
+    flex-direction: column;
+    gap:20px;
+}
+
+.discography-info {
+    background-color :#590000;
+    box-shadow:0 0 20px #000000;
+    width: 490px;
+    padding: 20px;
+    font-size:20px;
+}
+
+.discography-button {
+    display:block;
+    height:35px;
+    width:490px;
+    padding: 0 20px;
+    font-size:16px;
+    background: #960000;
+    background: linear-gradient(90deg, rgba(150, 0, 0, 1) 0%, rgba(99, 0, 0, 1) 50%, rgba(82, 0, 0, 1) 100%);
+    border: 0;
+    box-shadow:   0 0 20px #000000;
+    color:white; 
+    text-align: center;
+    align-content:center;
+}
